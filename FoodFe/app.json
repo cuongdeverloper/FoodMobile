@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "my-new-app",
+    "slug": "my-new-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+     
+        "NSLocationWhenInUseUsageDescription": "Ứng dụng cần truy cập vị trí của bạn để chọn địa điểm giao hàng."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.mynewapp",
+
+      "permissions": [
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./src/assets/favicon.png"
+    },
+    "scheme": "my-new-app",
+    "plugins": [
+      "expo-router",
+     
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Ứng dụng cần truy cập vị trí của bạn để chọn địa điểm giao hàng."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": "true"
+    }
+  }
+}
